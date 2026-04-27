@@ -1,0 +1,46 @@
+.media {
+  background: var(--background);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+}
+
+.videoCard {
+  background: var(--card-bg);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.videoWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.info {
+  padding: 30px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

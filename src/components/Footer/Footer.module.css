@@ -1,0 +1,82 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 100px 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 200;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.text {
+  color: #999;
+  line-height: 1.8;
+  max-width: 300px;
+  font-size: 0.9rem;
+}
+
+.heading {
+  margin-bottom: 35px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.links ul li {
+  margin-bottom: 18px;
+}
+
+.links a {
+  color: #ccc;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.links a:hover {
+  color: var(--primary);
+}
+
+.contact p {
+  color: #ccc;
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+}
+
+.bottom {
+  border-top: 1px solid #222;
+  padding-top: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+}

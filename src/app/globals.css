@@ -1,0 +1,148 @@
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --primary: #c5a059; /* Luxury Gold/Bronze */
+  --primary-dark: #a68545;
+  --secondary: #f9f9f9;
+  --accent: #1a1a1a;
+  --text-muted: #666666;
+  --card-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --border: #eeeeee;
+  --glass: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 120px 5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.premium-btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 0.8rem;
+}
+
+.premium-btn:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+}
+
+.outline-btn {
+  background: transparent;
+  color: var(--foreground);
+  padding: 14px 34px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 0.8rem;
+}
+
+.outline-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif; /* I'll use a serif font for headings if possible, otherwise standard is fine */
+  letter-spacing: -0.02em;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.section-title span {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 80px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin: 0 auto 40px;
+  }
+
+  .premium-btn,
+  .outline-btn {
+    padding: 12px 24px;
+    font-size: 0.75rem;
+  }
+}

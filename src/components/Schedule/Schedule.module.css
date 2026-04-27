@@ -1,0 +1,56 @@
+.schedule {
+  background: var(--secondary);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background: var(--card-bg);
+  padding: 0;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.table th,
+.table td {
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.table th {
+  text-transform: uppercase;
+  color: var(--foreground);
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: var(--secondary);
+}
+
+.table td {
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.time {
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+  background: #fff;
+  border-right: 1px solid var(--border);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover td {
+  color: var(--foreground);
+  background: rgba(197, 160, 89, 0.05);
+}
